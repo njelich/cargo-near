@@ -177,6 +177,10 @@ pub(crate) fn compile_project(
         env.push(("RUSTFLAGS", "-Awarnings"));
     }
 
+    // Passing features to sub dependencies doesn't work
+    // #[cfg(feature = "wasmcov")]
+    wasmcov::setup(None).expect("Failed to setup wasmcov");
+
     for (key, value) in env {
         match key {
             "RUSTFLAGS" => {

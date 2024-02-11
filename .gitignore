@@ -1,5 +1,5 @@
 # Build files
-/target
+target
 
 # Code Editor related files
 .idea

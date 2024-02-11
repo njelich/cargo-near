@@ -34,6 +34,7 @@ near-abi = { version = "0.4.0", features = ["__chunked-entries"] }
 libloading = "0.7.3"
 zstd = "0.11"
 atty = "0.2.14"
+wasmcov = { version = "0.1" }
 
 color-eyre = "0.6"
 inquire = "0.6"
@@ -51,3 +52,4 @@ dunce = "1"
 [features]
 default = ["ledger"]
 ledger = ["near-cli-rs/ledger"]
+wasmcov = []
